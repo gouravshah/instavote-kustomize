@@ -4,7 +4,7 @@ metadata:
   name: vote
   namespace: dev
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: vote
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: vote
-        image: schoolofdevops/vote:v4
+        image: schoolofdevops/vote:v5
         imagePullPolicy: Always
         ports:
         - containerPort: 80
